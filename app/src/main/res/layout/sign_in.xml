@@ -102,6 +102,7 @@
                     android:layout_height="25dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/unvisible"
+                    android:onClick="set_visible"
                     >
 
                 </ImageButton>

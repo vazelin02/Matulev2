@@ -13,7 +13,19 @@
         android:theme="@style/Theme.Matule"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".favorite"
+            android:exported="false" />
+        <activity
+            android:name=".productview"
+            android:exported="false" />
+        <activity
+            android:name=".mainBoard"
+            android:exported="false" />
+        <activity
+            android:name=".onboard"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
             android:exported="false" />
         <activity
             android:name=".sign_in"

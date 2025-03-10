@@ -5,6 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/blue"
+    tools:context=".splash">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/iconm"
+    tools:ignore="MissingConstraints"></ImageView>
 
+</FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
