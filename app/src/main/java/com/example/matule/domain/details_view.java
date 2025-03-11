@@ -49,4 +49,11 @@ public class details_view extends AppCompatActivity {
 
 
     }
+      public   void back(View view)
+    {
+
+        Intent intent = new Intent(this, mainBoard.class);
+        startActivity(intent);
+
+    }
 }
