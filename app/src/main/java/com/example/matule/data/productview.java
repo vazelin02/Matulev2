@@ -1,6 +1,7 @@
 package com.example.matule.data;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,12 +29,7 @@ public class productview extends LinearLayout {
         LayoutInflater.from(context).inflate(R.layout.activity_productview, this, true);
     }
 
-//    public void click(View view)
-//    {
-//
-//
-//
-//    }
+
 
 
 

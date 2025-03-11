@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".domain.details_view">
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/background"
+      >
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageButton
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_gravity="center_vertical"
+android:background="@drawable/backbtnicon"
+                  android:importantForAccessibility="no">
+
+
+              </ImageButton>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:layout_height="wrap_content"
+                  android:text="SneakerShop">
+
+              </TextView>
+
+          </FrameLayout>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Nike Air Max 270"
+              ></TextView>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Essential"
+              ></TextView>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Men’s Shoes"
+              ></TextView>
+
+
+          <TextView
+              android:layout_marginTop="15dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="₽179.39"
+              ></TextView>
+
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="250dp">
+
+
+              <ImageView
+                  android:id="@+id/sneaker"
+                  android:layout_width="match_parent"
+                  android:layout_height="180dp"
+                  android:layout_gravity="center_vertical"
+                  android:background="@drawable/snik1"
+                  ></ImageView>
+
+              <ImageView
+               android:layout_gravity="bottom"
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:background="@drawable/blueline"
+                  ></ImageView>
+          </FrameLayout>
+
+
+          <TableLayout
+              android:layout_width="wrap_content"
+              android:layout_height="100dp">
+              <TableRow>
+
+
+                  <ImageButton
+                      android:id="@+id/sniker1"
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_gravity="center_vertical|center_horizontal"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik1"
+                      android:backgroundTintMode="src_over"
+                      android:importantForAccessibility="no"
+                      android:onClick="ClickSnek"
+                      android:scaleType="centerInside"
+                      app:cornerRadius="0dp"
+
+                      >
+
+
+                  </ImageButton>
+
+                  <ImageButton
+                      android:id="@+id/sniker2"
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik2"
+                      android:importantForAccessibility="no"
+                      android:scaleType="centerInside"
+
+                      app:cornerRadius="0dp"
+                      android:onClick="ClickSnek"></ImageButton>
+
+
+                  <ImageButton
+                      android:id="@+id/sniker3"
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik3"
+                      android:importantForAccessibility="no"
+                      android:scaleType="centerInside"
+
+                      app:cornerRadius="0dp"
+                      android:onClick="ClickSnek"></ImageButton>
+
+                  <ImageButton
+                      android:id="@+id/sniker4"
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik4"
+                      android:importantForAccessibility="no"
+                      android:scaleType="centerInside"
+
+                      app:cornerRadius="0dp"
+                      android:onClick="ClickSnek"></ImageButton>
+
+                  <ImageButton
+                      android:id="@+id/sniker5"
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik5"
+                      android:importantForAccessibility="no"
+                      android:scaleType="centerInside"
+
+                      app:cornerRadius="20dp"
+                      android:onClick="ClickSnek"></ImageButton>
+                  <ImageButton
+                      android:layout_width="65dp"
+                      android:layout_height="65dp"
+                      android:layout_marginEnd="10dp"
+                      android:background="@drawable/snik5"
+                      app:cornerRadius="0dp"
+                    ></ImageButton>
+              </TableRow>
+          </TableLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="Вставка Max Air 270 обеспечивает непревзойденный комфорт в течение всего дня. Изящный дизайн ........"
+              >
+
+          </TextView>
+
+
+          <TextView
+              android:layout_gravity="end"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:text="Подробнее"
+              android:textColor="@color/blue"
+              >
+
+          </TextView>
+
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Размер обуви"
+                  android:padding="10dp"
+                  android:background="@color/white"
+                  ></TextView>
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Цвет обуви"
+                  android:layout_gravity="end"
+                  android:padding="10dp"
+                  android:background="@color/white"
+                  ></TextView>
+          </FrameLayout>
+
+
+
+
+      </LinearLayout>
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:layout_marginBottom="20dp"
+          >
+
+
+          <ImageButton
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:background="@drawable/favoriteicon"
+              android:importantForAccessibility="no"></ImageButton>
+
+          <FrameLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end">
+
+
+              <Button
+
+                  android:layout_width="300dp"
+                  android:layout_height="50dp"
+
+
+                  android:backgroundTint="@color/blue"
+                  android:text="В корзину"
+                  app:cornerRadius="10dp"></Button>
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_margin="5dp"
+                  android:background="@drawable/carticon"
+                  ></ImageView>
+
+          </FrameLayout>
+      </FrameLayout>
+
+
+  </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

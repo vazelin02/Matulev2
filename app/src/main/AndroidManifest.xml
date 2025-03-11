@@ -16,7 +16,7 @@
             android:name=".domain.favoritenew"
             android:exported="false" />
         <activity
-            android:name=".data.details_view"
+            android:name=".domain.details_view"
             android:exported="false" />
         <activity
             android:name=".domain.onboard$favorite"

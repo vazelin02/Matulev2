@@ -234,19 +234,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+
                 >
             <com.example.matule.data.productview
                 android:layout_width="180dp"
-                android:layout_height="180dp"></com.example.matule.data.productview>
+                android:layout_height="180dp"
+
+                ></com.example.matule.data.productview>
 
                 <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
-                    android:layout_gravity="end">
+                    android:layout_gravity="end"
+
+                    >
 
                 </com.example.matule.data.productview>
 
-
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="clickNex"
+    android:background="@drawable/back"></Button>
             </FrameLayout>
 
 
@@ -255,38 +264,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+
                 >
                 <com.example.matule.data.productview
                     android:layout_width="180dp"
-                    android:layout_height="180dp"></com.example.matule.data.productview>
+                    android:layout_height="180dp"
+
+                    ></com.example.matule.data.productview>
 
                 <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
-                    android:layout_gravity="end">
+                    android:layout_gravity="end"
+
+                    >
 
                 </com.example.matule.data.productview>
 
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="clickNex"
+                    android:background="@drawable/back"></Button>
             </FrameLayout>
 
 
             <FrameLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+
+                >
                 <com.example.matule.data.productview
                     android:layout_width="180dp"
-                    android:layout_height="180dp"></com.example.matule.data.productview>
+                    android:layout_height="180dp"
+
+                    ></com.example.matule.data.productview>
 
                 <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
-                    android:layout_gravity="end">
+                    android:layout_gravity="end"
+
+                    >
 
                 </com.example.matule.data.productview>
 
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="clickNex"
+                    android:background="@drawable/back"></Button>
             </FrameLayout>
 
         </LinearLayout>
