@@ -24,7 +24,7 @@ public class mainBoard extends AppCompatActivity {
         });
     }
     public void click(View view){
-        Intent intent = new Intent(this, favorite.class);
+        Intent intent = new Intent(this, com.example.matule.onboard.favorite.class);
         startActivity(intent);
     }
 }
