@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainBoard">
+    tools:context=".domain.mainBoard">
 
 
 
@@ -235,16 +235,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 >
-            <com.example.matule.productview
+            <com.example.matule.data.productview
                 android:layout_width="180dp"
-                android:layout_height="180dp"></com.example.matule.productview>
+                android:layout_height="180dp"></com.example.matule.data.productview>
 
-                <com.example.matule.productview
+                <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_gravity="end">
 
-                </com.example.matule.productview>
+                </com.example.matule.data.productview>
 
 
             </FrameLayout>
@@ -256,16 +256,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 >
-                <com.example.matule.productview
+                <com.example.matule.data.productview
                     android:layout_width="180dp"
-                    android:layout_height="180dp"></com.example.matule.productview>
+                    android:layout_height="180dp"></com.example.matule.data.productview>
 
-                <com.example.matule.productview
+                <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_gravity="end">
 
-                </com.example.matule.productview>
+                </com.example.matule.data.productview>
 
 
             </FrameLayout>
@@ -275,16 +275,16 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <com.example.matule.productview
+                <com.example.matule.data.productview
                     android:layout_width="180dp"
-                    android:layout_height="180dp"></com.example.matule.productview>
+                    android:layout_height="180dp"></com.example.matule.data.productview>
 
-                <com.example.matule.productview
+                <com.example.matule.data.productview
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_gravity="end">
 
-                </com.example.matule.productview>
+                </com.example.matule.data.productview>
 
 
             </FrameLayout>
@@ -302,12 +302,12 @@ bottom"
             android:layout_width="50dp"
             android:layout_height="50dp"
 
-            android:background="null"
+
             android:layout_marginLeft="100dp"
             android:layout_marginBottom="40dp"
             android:layout_gravity="bottom"
-
-            android:onClick=""></Button>
+android:background="@drawable/back"
+            android:onClick="click"></Button>
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.matule;
+package com.example.matule.domain;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.matule.R;
+
 //Ппролистываемый начальный экран
 public class onboard extends AppCompatActivity {
     ViewFlipper flipp;
@@ -39,7 +42,7 @@ public class onboard extends AppCompatActivity {
         if(
                 flipp.getDisplayedChild() == 2)
         {
-            Intent intent = new Intent(this, com.example.matule.mainBoard.class);
+            Intent intent = new Intent(this, mainBoard.class);
             startActivity(intent);
 
         }
@@ -62,19 +65,18 @@ public class onboard extends AppCompatActivity {
 
 
     }
+    public class onboard$favorite extends AppCompatActivity {
+        public onboard$favorite() {
+        }
 
-    public static class favorite extends AppCompatActivity {
-
-        @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             EdgeToEdge.enable(this);
-            setContentView(R.layout.activity_favorite);
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-                return insets;
-            });
+
+
         }
     }
+
+
+
 }

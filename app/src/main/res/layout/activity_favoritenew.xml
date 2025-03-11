@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboard$favorite">
+    tools:context=".domain.favoritenew">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +31,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
-                        android:background="@drawable/settingsicon"
+                        android:background="@drawable/backbtnicon"
+                        android:onClick="clickN"
                         ></ImageButton>
 
                     <TextView
@@ -69,16 +70,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     >
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
-                        android:layout_height="180dp"></com.example.matule.productview>
+                        android:layout_height="180dp"></com.example.matule.data.productview>
 
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
                         android:layout_height="180dp"
                         android:layout_gravity="end">
 
-                    </com.example.matule.productview>
+                    </com.example.matule.data.productview>
 
 
                 </FrameLayout>
@@ -90,16 +91,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     >
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
-                        android:layout_height="180dp"></com.example.matule.productview>
+                        android:layout_height="180dp"></com.example.matule.data.productview>
 
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
                         android:layout_height="180dp"
                         android:layout_gravity="end">
 
-                    </com.example.matule.productview>
+                    </com.example.matule.data.productview>
 
 
                 </FrameLayout>
@@ -109,16 +110,16 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
-                        android:layout_height="180dp"></com.example.matule.productview>
+                        android:layout_height="180dp"></com.example.matule.data.productview>
 
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
                         android:layout_height="180dp"
                         android:layout_gravity="end">
 
-                    </com.example.matule.productview>
+                    </com.example.matule.data.productview>
 
 
                 </FrameLayout>
@@ -127,9 +128,9 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.example.matule.productview
+                    <com.example.matule.data.productview
                         android:layout_width="180dp"
-                        android:layout_height="180dp"></com.example.matule.productview>
+                        android:layout_height="180dp"></com.example.matule.data.productview>
 
 
 

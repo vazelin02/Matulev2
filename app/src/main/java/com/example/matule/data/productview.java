@@ -1,16 +1,13 @@
-package com.example.matule;
+package com.example.matule.data;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.example.matule.R;
+
 //пользоватеьский элемент для одной единицы товара
 public class productview extends LinearLayout {
 
@@ -30,5 +27,14 @@ public class productview extends LinearLayout {
     {
         LayoutInflater.from(context).inflate(R.layout.activity_productview, this, true);
     }
+
+//    public void click(View view)
+//    {
+//
+//
+//
+//    }
+
+
 
 }

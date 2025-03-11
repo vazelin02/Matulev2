@@ -1,11 +1,10 @@
-package com.example.matule;
+package com.example.matule.domain;
 
 import static android.widget.Toast.makeText;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.PasswordTransformationMethod;
 import android.text.method.TransformationMethod;
 import android.util.Patterns;
 import android.view.View;
@@ -20,13 +19,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.matule.R;
 import com.example.matule.data.user;
 
 import okhttp3.*;
 
-import android.text.method.PasswordTransformationMethod;
-import android.widget.Toast;
-import android.widget.Toast.*;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.*;
@@ -92,6 +89,8 @@ return validation;
     //событие нажатия для кнопки вход
     public void click(View view)
     {
+
+
 String _login = login.getText().toString();
         String _password = password1.getText().toString();
         if(  validationEmail(_login)) {
@@ -106,7 +105,7 @@ int j =0;
             {
                 if(password1.getText().toString().equals("password") )
                 {
-                    Intent intent = new Intent(this, com.example.matule.splash.class);
+                    Intent intent = new Intent(this, splash.class);
                     startActivity(intent);
                 }
             }
