@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.matule.R;
-
+//страница details код для нее
 public class details_view extends AppCompatActivity {
 
 
