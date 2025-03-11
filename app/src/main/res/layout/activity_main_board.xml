@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainBoard">
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/settingsicon"
+                    ></ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Главная"
+                    android:textSize="30sp"></TextView>
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/anothersettignicon"
+                    ></ImageButton>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/searchicon"
+
+                    ></ImageView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp">
+
+                </EditText>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Акции"
+                    android:textSize="20sp"
+
+                    ></TextView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="Все"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"></TextView>
+            </FrameLayout>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/promotion"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Категории"
+                android:textSize="20sp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/disable"
+                        android:backgroundTint="@color/background"
+                        android:text="Все"
+                        app:cornerRadius="10dp"></Button>
+
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/disable"
+                        android:backgroundTint="@color/background"
+                        android:text="Outdoor"
+                        app:cornerRadius="10dp"></Button>
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/disable"
+                        android:backgroundTint="@color/background"
+                        android:text="Tennis"
+                        app:cornerRadius="10dp"></Button>
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/disable"
+                        android:backgroundTint="@color/background"
+                        android:text="Running"
+                        app:cornerRadius="10dp"></Button>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фильтр"
+                android:textSize="20sp"></TextView>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Размер обуви"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:backgroundTint="@color/background"
+        ></TextView>
+
+    <TextView
+
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Цвет обуви"
+
+        android:backgroundTint="@color/background"
+        android:padding="5dp"
+        ></TextView>
+
+
+
+
+
+</FrameLayout>
+            <FrameLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Популярное"
+                    android:textSize="20sp"
+
+                    ></TextView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="Все"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"></TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+            <com.example.matule.productview
+                android:layout_width="180dp"
+                android:layout_height="180dp"></com.example.matule.productview>
+
+                <com.example.matule.productview
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="end">
+
+                </com.example.matule.productview>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                >
+                <com.example.matule.productview
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"></com.example.matule.productview>
+
+                <com.example.matule.productview
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="end">
+
+                </com.example.matule.productview>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.matule.productview
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"></com.example.matule.productview>
+
+                <com.example.matule.productview
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="end">
+
+                </com.example.matule.productview>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+</ScrollView>
+        <ImageView
+            android:layout_gravity="
+bottom"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="@drawable/navbarmain"
+            ></ImageView>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="null"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom"
+
+            android:onClick=""></Button>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
