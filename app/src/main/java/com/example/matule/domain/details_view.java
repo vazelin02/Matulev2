@@ -19,7 +19,7 @@ import com.example.matule.R;
 
 public class details_view extends AppCompatActivity {
 
-
+//страница details код для нее
     ImageButton snik1, snik2, snik3, snik4, snik5;
     ImageView image;
 
