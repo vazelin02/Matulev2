@@ -337,6 +337,17 @@ bottom"
             android:layout_gravity="bottom"
 android:background="@drawable/back"
             android:onClick="click"></Button>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="66dp"
+
+
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/back"
+            android:onClick="clickCart"></Button>
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

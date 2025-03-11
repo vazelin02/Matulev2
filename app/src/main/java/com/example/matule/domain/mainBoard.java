@@ -18,7 +18,7 @@ public class mainBoard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_productview);
+        setContentView(R.layout.activity_main_board);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -27,6 +27,11 @@ public class mainBoard extends AppCompatActivity {
     }
     public void click(View view){
         Intent intent = new Intent(this, favoritenew.class);
+        startActivity(intent);
+    }
+
+    public void clickCart(View view){
+        Intent intent = new Intent(this, cart.class);
         startActivity(intent);
     }
 

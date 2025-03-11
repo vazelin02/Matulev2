@@ -187,4 +187,17 @@ int j =0;
         password1.setTransformationMethod(null);}
 
     }
+
+    public void tosignup(View view)
+    {
+        Intent intent = new Intent(this, signup.class);
+        startActivity(intent);
+    }
+
+    public void forgotpassword(View view)
+    {
+
+        Intent intent = new Intent(this, forgotpassword.class);
+        startActivity(intent);
+    }
 }

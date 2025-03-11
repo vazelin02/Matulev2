@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".domain.sign_in">
+    tools:context=".domain.signup">
 
 
     <FrameLayout
@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="30dp"
-                android:text="Привет!"
+                android:text="Регистрация"
                 android:textAlignment="center"
                 android:textSize="40dp"></TextView>
 
@@ -48,29 +48,55 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Ваше имя">
+
+            </TextView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F9"
+
+
+                >
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+
+                    tools:ignore="LabelFor"
+
+                    >
+
+                </EditText>
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Email">
 
             </TextView>
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#F7F7F9"
-
-
-    >
-            <EditText
-                android:id="@+id/email"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:autofillHints=""
-                android:inputType="textEmailAddress"
-                tools:ignore="LabelFor"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F9"
+
 
                 >
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+                    android:inputType="textEmailAddress"
+                    tools:ignore="LabelFor"
 
-            </EditText>
-    </FrameLayout>
+                    >
+
+                </EditText>
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -86,14 +112,14 @@
 
 
                 >
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                tools:ignore="TextFields"
-                android:password="true">
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    tools:ignore="TextFields"
+                    android:password="true">
 
-            </EditText>
+                </EditText>
 
                 <ImageButton
                     android:id="@+id/glaz"
@@ -107,27 +133,51 @@
 
                 </ImageButton>
             </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:text="Восстановить"
-                tools:ignore="HardcodedText"
-                android:clickable="true"
-                android:onClick="forgotpassword"
+
+                android:orientation="horizontal"
                 >
 
-            </TextView>
+
+<RadioButton
+    android:id="@+id/checks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</RadioButton>
+                <LinearLayout
+
+                    android:orientation="vertical"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Даю согласие на обработку"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:text="персональных данных"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
 
             <Button
                 android:id="@+id/enter"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="@string/enterstring"
+                android:text="Зарегестрироваться"
                 app:cornerRadius="10dp"
                 android:backgroundTint="@color/blue"
-android:onClick="click"
+android:onClick="registration"
                 />
 
 
@@ -145,17 +195,17 @@ android:onClick="click"
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Вы впервые? "></TextView>
+                android:text="Есть аккаунт? "></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Создать ппользователя"
-android:textStyle="bold"
-android:onClick="tosignup"
+                android:text="Войти"
+                android:textStyle="bold"
+                android:clickable="true"
+android:onClick="tosignin"
                 ></TextView>
 
         </LinearLayout>
     </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
