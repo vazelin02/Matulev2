@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Matule"
         tools:targetApi="31">
         <activity
+            android:name=".data.prodorder"
+            android:exported="false" />
+        <activity
+            android:name=".domain.orders"
+            android:exported="false" />
+        <activity
+            android:name=".domain.panel"
+            android:exported="false" />
+        <activity
+            android:name=".domain.notifications"
+            android:exported="false" />
+        <activity
+            android:name=".domain.profile"
+            android:exported="false" />
+        <activity
             android:name=".domain.pop"
             android:exported="false" />
         <activity

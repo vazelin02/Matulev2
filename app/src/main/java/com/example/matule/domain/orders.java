@@ -12,51 +12,29 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.matule.R;
 
-public class mainBoard extends AppCompatActivity {
-    //основная страница
+public class orders extends AppCompatActivity {
+
+
+    //код для страницы с заказами
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_board);
+        setContentView(R.layout.activity_orders);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-    public void click(View view){
-        Intent intent = new Intent(this, favoritenew.class);
+
+    public void back(View view){
+        Intent intent = new Intent(this, mainBoard.class);
         startActivity(intent);
     }
 
-    public void clickCart(View view){
-        Intent intent = new Intent(this, cart.class);
-        startActivity(intent);
-    }
-
-
-
-    public void clickprofile(View view)
-    {
-        Intent intent = new Intent(this, profile.class);
-        startActivity(intent);
-    }
-    public void clickNex(View view)
-    {
-        Intent intent = new Intent(this, details_view.class);
-        startActivity(intent);
-    }
-
-    public void clicknot(View view)
-    {
-        Intent intent = new Intent(this, notifications.class);
-        startActivity(intent);
-    }
-
-    public void panel(View view)
-    {
-        Intent intent = new Intent(this, panel.class);
+    public void back2(View view){
+        Intent intent = new Intent(this, mainBoard.class);
         startActivity(intent);
     }
 }
